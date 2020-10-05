@@ -1,7 +1,7 @@
 import { findAll } from 'Models/CharacterModel';
 
 export const main = async (event) => {
-  const body = JSON.parse(event.body);
+  const body = event && event.body ? JSON.parse(event.body) : { limit: 10, page: 1 };
   const args = { body };
 
   const limit = args.limit ? args.limit : 10;

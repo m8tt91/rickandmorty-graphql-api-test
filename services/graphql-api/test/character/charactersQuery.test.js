@@ -13,6 +13,11 @@ describe('characters Query', () => {
         characters {
           id
           name
+          gender
+          species
+          type
+          locationId
+          originId
         }
       }
     `;
@@ -21,8 +26,24 @@ describe('characters Query', () => {
     invoke.mockReturnValue({
       code: 'OK',
       message: [
-        { id: 1, name: 'Rick' },
-        { id: 2, name: 'Morty' },
+        {
+          id: 1,
+          name: 'Rick',
+          gender: 'MALE',
+          species: 'Human',
+          type: '',
+          locationId: 20,
+          originId: 1,
+        },
+        {
+          id: 2,
+          name: 'Morty',
+          gender: 'MALE',
+          species: 'Human',
+          type: '',
+          locationId: 20,
+          originId: 1,
+        },
       ],
       statusCode: 200,
     });
@@ -34,8 +55,24 @@ describe('characters Query', () => {
   test('returns the HelloWorld string', () => {
     expect(subject.data).toEqual({
       characters: [
-        { id: '1', name: 'Rick' },
-        { id: '2', name: 'Morty' },
+        {
+          id: '1',
+          name: 'Rick',
+          gender: 'MALE',
+          species: 'Human',
+          type: '',
+          locationId: '20',
+          originId: '1',
+        },
+        {
+          id: '2',
+          name: 'Morty',
+          gender: 'MALE',
+          species: 'Human',
+          type: '',
+          locationId: '20',
+          originId: '1',
+        },
       ],
     });
   });

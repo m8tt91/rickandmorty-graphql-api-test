@@ -7,7 +7,6 @@ import CharacterModel from './CharacterModel';
  * @param {int} offset
  */
 export const findAll = async (args) => {
-  const { offset, limit } = args;
-  const characters = await repoFindAll(limit, offset);
+  const characters = await repoFindAll(args);
   return characters.map((character) => new CharacterModel(character));
 };
