@@ -19,6 +19,8 @@ export const characterTypeDef = gql`
     type: String
     "Location ID"
     locationId: ID
+    "Origin ID"
+    originId: ID
   }
 
   extend type Query {

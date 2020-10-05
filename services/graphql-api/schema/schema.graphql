@@ -46,6 +46,9 @@ type Character {
   """Human readable name"""
   name: String
 
+  """Origin ID"""
+  originId: ID
+
   """Species"""
   species: String
 
