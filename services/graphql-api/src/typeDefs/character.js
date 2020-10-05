@@ -9,6 +9,16 @@ export const characterTypeDef = gql`
     id: ID
     "Human readable name"
     name: String
+    "Gender of character"
+    gender: String
+    "Living status"
+    status: String
+    "Species"
+    species: String
+    "Type"
+    type: String
+    "Location ID"
+    locationId: ID
   }
 
   extend type Query {

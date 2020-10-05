@@ -34,11 +34,26 @@ directive @connection(
 
 """Defines Character type for API"""
 type Character {
+  """Gender of character"""
+  gender: String
+
   """Unique identifier"""
   id: ID
 
+  """Location ID"""
+  locationId: ID
+
   """Human readable name"""
   name: String
+
+  """Species"""
+  species: String
+
+  """Living status"""
+  status: String
+
+  """Type"""
+  type: String
 }
 
 """Collections of mutations for schema"""
