@@ -53,6 +53,9 @@ type Query {
   _: String
 
   """Returns a list of all the characters"""
+  character(id: ID!): Character
+
+  """Returns a character"""
   characters: [Character]
 }
 

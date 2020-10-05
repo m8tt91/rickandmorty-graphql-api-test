@@ -35,3 +35,9 @@ functions:
       - http:
           path: characters
           method: get
+  getCharacter:
+    handler: src/handlers/getCharacter.main
+    events:
+      - http:
+          path: character
+          method: get
