@@ -56,7 +56,7 @@ type Query {
   character(id: ID!): Character
 
   """Returns a character"""
-  characters: [Character]
+  characters(limit: Int, page: Int): [Character]
 }
 
 """Collections of subscriptions for schema"""

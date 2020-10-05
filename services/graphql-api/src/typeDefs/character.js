@@ -13,7 +13,7 @@ export const characterTypeDef = gql`
 
   extend type Query {
     "Returns a character"
-    characters: [Character]
+    characters(page: Int, limit: Int): [Character]
   }
 
   extend type Query {

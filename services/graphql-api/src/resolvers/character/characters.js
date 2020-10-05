@@ -5,7 +5,7 @@ export const characters = async (parent, args, context) => {
   const { code, message, statusCode } = await invoke({
     serviceName: 'character-api',
     functionName: 'getCharacters',
-    payload: {},
+    payload: { args },
     context,
   });
 
