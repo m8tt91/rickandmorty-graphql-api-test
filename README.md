@@ -50,7 +50,7 @@ Rick and Morty jump universes quite a bit. Who knows where they'll be at the end
 #### Acceptance Criteria
 - [ ] Add a new mutation called `changeDimension` that takes a list of characters and a new destination
   - One of the characters **must** be Rick (id: 1), Morty (id: 2), or Summer (id: 3) - Note: there are more Ricks than just Rick C-137 but he's the Rickest Rick so we're only letting him jump from now on because the counsel sucks and banned interdimensional travel and he doesn't listen to them
-  - All the characters jumping **must** be in the same location prior to the change
+  -  All the characters jumping **must** be in the same location prior to the change
 
 ---
 
@@ -102,3 +102,25 @@ Runs full jest test suite in CI mode. All tests are run sequentially.
 
 `yarn test:debug`
 Run tests in debuggable mode for your editor.
+
+--- 
+
+# Notes by Matt
+
+Firstly, thanks for the test, it was one of the more interesting tech tests I've experienced before possibly due to the subject. 
+
+## Progress
+
+I've spent around 3 hours today (on and off for lunch) working on the test, there are many things I wish that I could've also completed in the time but I felt now was a good point to stop at.
+
+I managed to complete the first task and the majority of the section task leaving out the final part due to a lack of knowledge with Graphql and resolving data from a different query. (This is the first time i've touched Graphql in around 2 years after briefly updating something on a project some time ago.)
+
+I could've quickly added the episode API but most of that would be a copy+paste job so at this point I didn't feel like it would add much value to yourselves when looking at my process through the test though I am happy to continue on that if you so wish.
+
+Test coverage is also quite low for my changes, I didn't get round to writing any tests for my new endpoints, however the pagination on the character api still passes the tests. Given more time or a better knowledge of Graphql I would've finished writing these tests / written the tests for the new work first.
+
+## Thanks
+
+Thanks for taking the time to look through my work, I look forward to speaking with you again shortly if you wish.
+
+Matt
