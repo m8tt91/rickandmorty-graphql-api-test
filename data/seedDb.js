@@ -151,7 +151,7 @@ module.exports = (async () => {
         let char = await createCharacter({
           name,
           image,
-          gender: gender ? null : gender.toUpperCase(),
+          gender: gender === 'unknown' ? null : gender.toUpperCase(),
           locationId: location.id,
           originId: origin.id,
           status: status === 'unknown' ? null : status.toUpperCase(),
