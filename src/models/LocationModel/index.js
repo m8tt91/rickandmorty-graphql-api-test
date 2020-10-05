@@ -1,4 +1,6 @@
-export { collection } from './collection';
+import LocationModel from './LocationModel';
+
+export default LocationModel;
 
 // getters
 export { findAll } from './findAll';

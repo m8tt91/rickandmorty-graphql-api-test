@@ -24,12 +24,12 @@ export const characterTypeDef = gql`
   }
 
   extend type Query {
-    "Returns a character"
+    "Returns a list of all the characters"
     characters(page: Int, limit: Int): [Character]
   }
 
   extend type Query {
-    "Returns a list of all the characters"
+    "Returns a character"
     character(id: ID!): Character
   }
 `;

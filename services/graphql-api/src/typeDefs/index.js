@@ -1,5 +1,6 @@
 import { gql } from 'apollo-server-lambda';
 import { characterTypeDef } from './character';
+import { locationTypeDef } from './location';
 
 const baseTypeDefs = gql`
   """
@@ -27,4 +28,4 @@ const baseTypeDefs = gql`
   }
 `;
 
-export const typeDefs = [baseTypeDefs, characterTypeDef];
+export const typeDefs = [baseTypeDefs, characterTypeDef, locationTypeDef];

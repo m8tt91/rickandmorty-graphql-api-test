@@ -59,6 +59,21 @@ type Character {
   type: String
 }
 
+"""Defines Character type for API"""
+type Location {
+  """Dimension"""
+  dimension: String
+
+  """Unique identifier"""
+  id: ID
+
+  """Name"""
+  name: String
+
+  """Type"""
+  type: String
+}
+
 """Collections of mutations for schema"""
 type Mutation {
   """Empty mutation type to serve as a parent for all other mutations"""
@@ -70,11 +85,17 @@ type Query {
   """Empty query type to serve as a parent for all other queries"""
   _: String
 
-  """Returns a list of all the characters"""
+  """Returns a character"""
   character(id: ID!): Character
 
-  """Returns a character"""
+  """Returns a list of all the characters"""
   characters(limit: Int, page: Int): [Character]
+
+  """Returns a location"""
+  location(id: ID!): Location
+
+  """Returns a list of all locations"""
+  locations(limit: Int, page: Int): [Location]
 }
 
 """Collections of subscriptions for schema"""
